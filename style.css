@@ -1,3 +1,5 @@
+
+
 *{
     margin: 0;
     padding: 0;
@@ -130,10 +132,10 @@ justify-content: space-between;
   font-family: 'Poppins' sans-serif;
 
   color: rgb(0, 0, 0);
--webkit-animation: mainFadeIn 2s forwards;
-  -o-animation: mainFadeIn 2s forwards;
-  animation: mainFadeIn 2s forwards;
-  animation-delay: 1.6s;
+-webkit-animation: mainFadeIn 1.5s forwards;
+  -o-animation: mainFadeIn 1.5s forwards;
+  animation: mainFadeIn 1.5s forwards;
+  animation-delay: 1s;
   opacity: 0;
   display: flex;
   align-items: baseline;
@@ -301,7 +303,21 @@ height: 100vh;
 
 .home .home-content .text-1{
     font-size: 27px;
+    animation: transitionIn 0.75s;
 }
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+
 .home .home-content .text-2{
     font-size: 75px;
          margin-left: -3px;
