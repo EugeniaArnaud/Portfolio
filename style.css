@@ -698,8 +698,13 @@ padding-top: 200px;
 
 @media (max-width: 690px){
     .column-skills{
-        grid-template-columns: 1fr;
-    }
+        grid-template-columns: repeat(2, 1fr);
+        z-index: 2;
+        padding: 0;
+        padding-right: 20px;
+        align-items: center;
+        justify-content: center;
+            }
 
     .max-width{
         padding: 0 23px;
