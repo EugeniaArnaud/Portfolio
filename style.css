@@ -251,6 +251,19 @@ height: 100vh;
     letter-spacing: 5px;
 }
 
+
+.home .home-content .text-4{
+    font-size: 40px;
+    margin: 5px 0;   
+    display: none; 
+}
+.home .home-content .text-4 span{
+    color: rgb(199, 32, 82);
+    font-weight: 510;
+    letter-spacing: 5px;
+    display: none;
+}
+
 /* similar about project and contact */
 section{
     padding: 100px 0;
@@ -708,15 +721,29 @@ padding-top: 200px;
        .home .home-content .text-2{
         font-size: 60px;
             }
-    .home .home-content .text-3{
+    .home .home-content .text-4{
         font-size: 32px;
     }
     .projects .projects-content .card{
         width: 100%;
-    }
-    
-}
 
+    }
+    .home .home-content .text-4{
+         
+        display: block;
+    }
+    .home .home-content .text-4 span{
+       
+        display: block;
+    }
+    .home .home-content .text-3{
+                display: none; 
+    }
+    .home .home-content .text-3 span{
+               display: none;
+    }
+  
+}
 @media (max-width: 500px){
            /* home */
        .home .home-content .text-2{
