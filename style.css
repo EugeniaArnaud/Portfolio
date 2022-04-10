@@ -169,7 +169,7 @@ margin-top: -10px;
 .block-2{
   width: 0%;
   height: inherit;
-  background: #e91e63;
+  background: #d31d5a;
   position: absolute;
   animation: secBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
   animation-delay: 2s;
