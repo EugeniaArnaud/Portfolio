@@ -31,3 +31,7 @@ $('.navbar .menu li a').click(function(){
         $('.navbar i').toggleClass("active");
     })
 })
+
+
+
+
