@@ -290,7 +290,7 @@ section .title{
     font-weight: 500;
     margin-bottom:  60px;
     padding-bottom: 20px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'poppins', sans-serif;
 }
 section .title::before{
     content: "";
@@ -344,11 +344,15 @@ transform: translateX(-50%);
     margin-bottom: 10px;
 }
 
-.about .about-content .right .text span{
+.about .about-content .right .text .span-web{
 color: rgb(199, 32, 82);
 }
-.about .about-content .right p{
+.about .about-content .right .span-about{
     text-align: justify;
+    font-size: medium;
+    color: #111;
+    font-weight: 400;
+
 }
 
 .about .about-content .right a{
