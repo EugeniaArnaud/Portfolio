@@ -4,6 +4,10 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+
+html{
+    scroll-behavior: smooth;
+}
 .max-width {
     max-width: 1700px;
     padding: 0 80px;
@@ -35,16 +39,18 @@ justify-content: space-between;
     animation: transitionIn 0.75s;
     text-decoration: none;
     color: white;
-    /* padding-left: 30px; */
+    font-weight: 600;
     font-family: 'Poppins', sans-serif;
     font-size: 35px;
 
 }
 
 .navbar .content_nav li a{
+    display: block;
     color: white; 
     font-size: 18px;
     margin-left: 25px;
+    transition: color 0.3s ease;
 }
 
 .navbar .content_nav li {
@@ -80,14 +86,37 @@ justify-content: space-between;
     cursor: pointer;
     display: none;
 }
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: crimson;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+ .scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.scroll-up-btn:hover{
+    filter: brightness(90%);
+} 
 
 
 /* Home style*/
-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 .home{
 display: flex;
 background-color: rgb(233, 195, 230);
@@ -97,8 +126,12 @@ height: 100vh;
   font-family: 'Poppins', sans-serif;
 }
 .home .max-width{
-    margin: auto 0 auto 40px;
-}
+    width: 100%;
+    display: flex;
+  }
+  .home .max-width .row{
+    margin-right: 0;
+  }
 
 .home .home-content .text-1{
     font-size: 27px;
@@ -119,9 +152,12 @@ height: 100vh;
 /* similar about project and contact */
 section{
     padding: 100px 0;
+
 }
 .about, .projects, .skills, .contact{
     font-family: 'Poppins', sans-serif;
+    /* si quisiera la pagina completa: height: 100vh;
+     */
 }
 .about .about-content, .projects .projects-content, .skills .skills-content, .contact .contact-content{
     
@@ -166,7 +202,12 @@ transform: translateX(-50%);
 
 /* ABOUT STYLE */
 
-
+.about{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    min-height: 500px;
+}
 
 .about .title::after{
     content: "Who I am";
@@ -520,6 +561,9 @@ color: rgb(199, 32, 82);
         padding: 0 23px;
     }
        /* home */
+       .about{
+        height: auto;
+    }
        .home .home-content .text-2{
         font-size: 60px;
             }
