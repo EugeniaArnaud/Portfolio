@@ -532,7 +532,6 @@ padding-top: 200px;
 
 .contact .contact-content .column{
     width: calc(50% - 30px);
-    padding-left: 70px;
    
 }
 .contact .contact-content .text{
@@ -742,6 +741,11 @@ padding-top: 200px;
     .home .home-content .text-3 span{
                display: none;
     }
+ .contact{
+      display: flex;
+     justify-content: center;
+     align-items: center;
+ }
   
 }
 @media (max-width: 500px){
