@@ -271,9 +271,8 @@ section{
 }
 .about, .projects, .skills, .contact{
     font-family: 'Poppins', sans-serif;
-    /* si quisiera la pagina completa: height: 100vh;
-     */
-}
+    }
+    
 .about .about-content, .projects .projects-content, .skills .skills-content, .contact .contact-content{
     
     display: flex;
@@ -442,10 +441,9 @@ color: rgb(199, 32, 82);
     align-items: center;
     text-align: center;
     /* grid-gap: 1rem;
-    /*padding: 1rem 80px; */
+    padding: 1rem 80px; */
     /* font-size: 1.2rem; */
 }
-
 .skill-box{
     padding: 1rem;
        cursor: pointer;
@@ -601,6 +599,9 @@ padding-top: 200px;
 .home .max-width{
     margin-left: 0;
 }
+.contact{
+    height: auto;
+}
 }
 
 @media (max-width: 1104px){
@@ -696,6 +697,9 @@ padding-top: 200px;
         width: 100%;
         margin-bottom: 35px;
     }
+     .contact{
+        height: auto;
+    }
 }
 
 
@@ -705,7 +709,10 @@ padding-top: 200px;
     .column-skills{
         grid-template-columns: repeat(2, 1fr);
         z-index: 2;
-       
+        padding: 0;
+        
+        align-items: center;
+        justify-content: center;
             }
 
     .max-width{
