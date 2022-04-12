@@ -599,44 +599,12 @@ z-index: 2;
     .home .max-width{
         margin-left: 0;
     }
-    /* .contact{
-        height: auto;
-    } */
-    /* CAMBIOS ACA POR PROBLEMA DE SKILLS */
-    /* .contact{
-        height: 100%;
-    }
-       .about{
-        height: 100%;
-    }
-    .skills{
-        height: 100%;
-    }
-    .projects{
-        height: 100%;
-    } */
-    }
+        }
 
 @media (max-width: 1300px){
 .home .max-width{
     margin-left: 0;
 }
-/* .contact{
-    height: auto;
-} */
-/* CAMBIOS ACA POR PROBLEMA DE SKILLS */
-/* .contact{
-    height: 100%;
-}
-   .about{
-    height: 100%;
-}
-.skills{
-    height: 100%;
-}
-.projects{
-    height: 100%;
-} */
 }
 
 @media (max-width: 1104px){
@@ -751,7 +719,6 @@ z-index: 2;
      
 }
 
-
 @media (max-width: 690px){
 
     .projects{
@@ -823,9 +790,7 @@ z-index: 2;
     .home .home-content .text-3{
         font-size: 27px;
     }
-    /* .contact{
-        height: auto;
-    } */
+  
 }
 
 
@@ -840,8 +805,7 @@ z-index: 2;
         height: 100%;
     }
     .projects{
-        height: 100%;
-        
+        height: 100%;   
     } 
 
 
