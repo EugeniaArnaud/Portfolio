@@ -265,12 +265,15 @@ height: 100vh;
 }
 
 /* similar about project and contact */
+
 section{
     padding: 100px 0;
+    
 
 }
 .about, .projects, .skills, .contact{
     font-family: 'Poppins', sans-serif;
+    
     }
     
 .about .about-content, .projects .projects-content, .skills .skills-content, .contact .contact-content{
@@ -279,8 +282,7 @@ section{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    
-    }
+        }
 
 section .title{
     position: relative;
@@ -329,8 +331,8 @@ transform: translateX(-50%);
     width: 45%;
 }
 .about .about-content .left img {
-     height: 400px;
-    width: 400px;
+     height: 350px;
+    width: 350px;
     object-fit: cover;
    
 }
@@ -338,7 +340,7 @@ transform: translateX(-50%);
     width: 55%;
 }
 .about .about-content .right .text{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -373,6 +375,7 @@ color: rgb(199, 32, 82);
 /* PROJECTS STYLE */
 .projects{
     height: 100vh;
+    min-height: 500px;
     /* lo hice flex para que se centre mientras sean 3 proyectos. cuando sean mas quitarlo. */
     display: flex;
     color: #fff;
@@ -430,7 +433,7 @@ color: rgb(199, 32, 82);
 /* skills section styling */
 .skills{
     height: 100vh;
-    display: flex;
+        display: flex;
     justify-content: space-around;
 }
 
@@ -440,8 +443,8 @@ color: rgb(199, 32, 82);
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* grid-gap: 1rem;
-    padding: 1rem 80px; */
+     grid-gap: 1rem;
+    padding: 1rem 80px; 
     /* font-size: 1.2rem; */
 }
 .skill-box{
@@ -528,8 +531,6 @@ z-index: 2;
 /* CONTACT STYLE */
 .contact{
     height: 100vh;
-padding-top: 200px;
-
     background:rgb(233, 195, 230) ;
 }
 
@@ -594,14 +595,48 @@ padding-top: 200px;
 
 /* responsive */
 
+@media (max-width: 1680px){
+    .home .max-width{
+        margin-left: 0;
+    }
+    /* .contact{
+        height: auto;
+    } */
+    /* CAMBIOS ACA POR PROBLEMA DE SKILLS */
+    /* .contact{
+        height: 100%;
+    }
+       .about{
+        height: 100%;
+    }
+    .skills{
+        height: 100%;
+    }
+    .projects{
+        height: 100%;
+    } */
+    }
 
 @media (max-width: 1300px){
 .home .max-width{
     margin-left: 0;
 }
-.contact{
+/* .contact{
     height: auto;
+} */
+/* CAMBIOS ACA POR PROBLEMA DE SKILLS */
+/* .contact{
+    height: 100%;
 }
+   .about{
+    height: 100%;
+}
+.skills{
+    height: 100%;
+}
+.projects{
+    height: 100%;
+} */
 }
 
 @media (max-width: 1104px){
@@ -622,21 +657,37 @@ padding-top: 200px;
         grid-template-columns: repeat(2, 1fr);
         z-index: 2;
     }
+    
+     .contact{
+        height: 100%;
+    }
+       .about{
+        height: 100%;
+    }
+    .skills{
+        height: 100%;
+    }
+    .projects{
+        height: 100%;
+    } 
     }
 
 @media (max-width: 947px){
+
     .contact{
-        height: auto;
+        height: 100%;
     }
        .about{
-        height: auto;
+        height: 100%;
     }
     .skills{
-        height: auto;
+        height: 100%;
     }
     .projects{
-        height: auto;
-    }
+        height: 100%;
+    } 
+
+   
     /* menu btn */
 .menu-btn{
     display: block;
@@ -697,15 +748,17 @@ padding-top: 200px;
         width: 100%;
         margin-bottom: 35px;
     }
-     .contact{
-        height: auto;
-    }
+     
 }
 
 
-
-
 @media (max-width: 690px){
+
+    .projects{
+        height: 100%;
+        
+    } 
+
     .column-skills{
         grid-template-columns: repeat(2, 1fr);
         z-index: 2;
@@ -720,7 +773,7 @@ padding-top: 200px;
     }
        /* home */
        .contact{
-        height: auto;
+        height: 100vh;
     }
        .about{
         height: auto;
@@ -770,7 +823,43 @@ padding-top: 200px;
     .home .home-content .text-3{
         font-size: 27px;
     }
-    .contact{
+    /* .contact{
         height: auto;
+    } */
+}
+
+
+@media screen and ( max-height: 740px ){
+    .contact{
+        height: 100%;
     }
+       .about{
+        height: 100%;
+    }
+    .skills{
+        height: 100%;
+    }
+    .projects{
+        height: 100%;
+        
+    } 
+
+
+}
+
+
+
+@media screen and ( max-height: 570px ){
+    .contact{
+        height: 100%;
+    }
+       .about{
+        height: 100%;
+    }
+    .skills{
+        height: 100%;
+    }
+    .projects{
+        height: 100%;
+    } 
 }
