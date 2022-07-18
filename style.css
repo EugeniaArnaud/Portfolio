@@ -438,7 +438,7 @@ color: rgb(199, 32, 82);
 
 /* skills section styling */
 .skills{
-    height: 100vh;
+    height: 100%;
         display: flex;
     justify-content: space-around;
 }
